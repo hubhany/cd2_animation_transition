@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devive-width, initial-scale=1.0">
+    <title>Animacja w transition i wstep do jquery</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="circle active"></div>
+    <button>Zakręć</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $('button').on('click', function(){
+        $('.circle').toggleClass('active');
+      })
+      /*
+      $('button').click(function(){
+        $('.circle').toggleClass('active');
+      })
+      */
+    </script>
+  </body>
+</html>
